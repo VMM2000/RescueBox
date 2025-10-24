@@ -60,8 +60,8 @@ server.add_app_metadata(
 models_dir = Path("src/age_and_gender_detection/models")
 model = AgeGenderDetector(
     face_detector_path=models_dir / "version-RFB-640.onnx",
-    age_classifier_path=models_dir / "age_googlenet.onnx",
-    gender_classifier_path=models_dir / "gender_googlenet.onnx",
+    age_classifier_path=models_dir / "age_googlenet_dynamic.onnx",
+    gender_classifier_path=models_dir / "gender_googlenet_dynamic.onnx",
 )
 
 
